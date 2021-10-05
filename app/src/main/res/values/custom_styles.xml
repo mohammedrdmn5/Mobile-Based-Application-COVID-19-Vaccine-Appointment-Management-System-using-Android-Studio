@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="margin_fit_R_L">
+        <item name="android:layout_marginStart">@dimen/marg16</item>
+        <item name="android:layout_marginLeft">@dimen/marg16</item>
+        <item name="android:layout_marginEnd">@dimen/marg16</item>
+        <item name="android:layout_marginRight">@dimen/marg16</item>
+    </style>
+    <style name="margin_fit_R_L.Top" parent="margin_fit_R_L">
+        <item name="android:layout_marginTop">@dimen/marg16</item>
+    </style>
+<!--    Style for Circular imageview-->
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

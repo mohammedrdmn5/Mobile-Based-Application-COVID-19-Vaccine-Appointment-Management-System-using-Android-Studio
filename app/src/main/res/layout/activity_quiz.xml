@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginBottom="59dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_Question_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/questionsNo"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_Question_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_Question_No"
+            android:fontFamily="@font/roboto"
+            android:text="@string/state"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rg_Options"
+            android:layout_marginBottom="@dimen/marg16"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_horizontal"
+            android:text="Qustion title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26dp" />
+
+
+        <RadioGroup
+            android:id="@+id/rg_Options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RadioButton
+                android:id="@+id/rb_Option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonchecked"
+                android:text="Option 1"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rb_Option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonchecked"
+                android:text="Option 2"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rb_Option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonchecked"
+                android:text="@string/option_3"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rb_Option4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonchecked"
+                android:text="Option 4"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_next_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg_Options"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_btn"
+            android:fontFamily="@font/roboto_medium"
+            android:foregroundGravity="center_horizontal"
+            android:gravity="center"
+            android:onClick="btnNextQuestion"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:backgroundTint="@color/second_header" />
+
+        <CheckBox
+            android:id="@+id/cb_i_understand"
+            style="@style/margin_fit_R_L"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_next_question"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:onClick="checkIunderstand"
+            android:text="@string/i_understand" />
+
+
+        <ImageView
+            android:id="@+id/imgv_success"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/cb_i_understand"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginBottom="10dp"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/ic_success"
+            tools:ignore="VectorDrawableCompat" />
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/second_header"
+        android:fontFamily="@font/roboto_medium"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/nav_selector_item"
+        app:itemRippleColor="@android:color/transparent"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navigation_bar_items" />
+</androidx.constraintlayout.widget.ConstraintLayout>

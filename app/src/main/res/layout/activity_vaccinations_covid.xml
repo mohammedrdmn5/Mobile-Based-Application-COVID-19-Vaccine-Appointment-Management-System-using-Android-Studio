@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Vaccinations_COVID">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#248078"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_about_vaccine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/about_covid_19_vaccination"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="27dp"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toEndOf="@+id/tv_about_vaccine"
+                        android:layout_toRightOf="@+id/tv_about_vaccine"
+                        android:gravity="center_vertical"
+                        app:srcCompat="@drawable/vaccinepng" />
+
+                    <TextView
+                        android:id="@+id/tv_vaccination_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/progressBar"
+                        android:layout_below="@+id/tv_about_vaccine"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="-12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/tv_vaccination_progress"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="@id/tv_vaccination_progress"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="16dp"
+
+                        android:layout_marginEnd="168dp"
+                        android:layout_marginRight="168dp"
+                        android:layout_marginBottom="44dp"
+                        android:progress="7" />
+
+                    <TextView
+                        android:id="@+id/tv_vaccination_progress_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_toStartOf="@+id/imageView"
+                        android:layout_toLeftOf="@+id/imageView"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/People_fully_vaccinated"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_about_vaccine_what"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/about_covid_19_vaccination_what"
+                android:textColor="@color/second_header"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/tv_about_vaccine_what_subtitle"
+                style="@style/margin_fit_R_L"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/roboto"
+                android:justificationMode="inter_word"
+                android:text="@string/about_covid_19_vaccination_what_subs"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_vaccine_what" />
+
+            <TextView
+                android:id="@+id/tv_about_vaccine_how"
+                style="@style/margin_fit_R_L.Top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="@string/about_covid_19_vaccination_how"
+                android:textColor="@color/second_header"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_vaccine_what_subtitle" />
+
+            <TextView
+                android:id="@+id/tv_about_vaccine_how_subtitle"
+                style="@style/margin_fit_R_L.Top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:justificationMode="inter_word"
+                android:text="@string/about_covid_19_vaccination_how_subs"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_vaccine_how" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_about_vaccine_how_subtitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias=".98"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_vaccine_how"
+                app:layout_constraintVertical_bias="0.48"
+                app:srcCompat="@drawable/ic__coronaviures"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/tv_about_vaccine_types"
+                style="@style/margin_fit_R_L.Top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="@string/about_covid_19_vaccination_types"
+                android:textColor="@color/second_header"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_vaccine_how_subtitle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tv_about_vaccine_types_subtitle1_card"
+                style="@style/margin_fit_R_L.Top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="23dp"
+                app:cardElevation="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_vaccine_types">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_about_vaccine_types_subtitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:text="@string/about_covid_19_vaccination_types_subs1"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_about_vaccine_types_subtitle_subs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_about_vaccine_types_subtitle1"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:padding="7dp"
+                        android:text="@string/about_covid_19_vaccination_types_subs1_sub1"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <View
+                        android:id="@+id/dev_about_vaccine_types_subtitle_subs1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="6dp"
+                        android:layout_below="@+id/tv_about_vaccine_types_subtitle_subs1"
+                        android:background="?android:attr/listDivider"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tv_about_vaccine_types_subtitle1_card2"
+                style="@style/margin_fit_R_L.Top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="23dp"
+                app:cardElevation="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_vaccine_types_subtitle1_card">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_about_vaccine_types_subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:text="@string/about_covid_19_vaccination_types_subs2"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_about_vaccine_types_subtitle_subs2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_about_vaccine_types_subtitle2"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:padding="7dp"
+                        android:text="@string/about_covid_19_vaccination_types_subs2_sub2"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <View
+                        android:id="@+id/dev_about_vaccine_types_subtitle_subs2"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        android:layout_below="@+id/tv_about_vaccine_types_subtitle_subs2"
+                        android:background="?android:attr/listDivider"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tv_about_vaccine_types_subtitle1_card3"
+                style="@style/margin_fit_R_L.Top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="23dp"
+                app:cardElevation="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_vaccine_types_subtitle1_card2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_about_vaccine_types_subtitle3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:text="@string/about_covid_19_vaccination_types_subs3"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_about_vaccine_types_subtitle_subs3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_about_vaccine_types_subtitle3"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:padding="7dp"
+                        android:text="@string/about_covid_19_vaccination_types_subs3_sub3"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <View
+                        android:id="@+id/dev_about_vaccine_types_subtitle_sub3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        android:layout_below="@+id/tv_about_vaccine_types_subtitle_subs3"
+                        android:background="?android:attr/listDivider"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <CheckBox
+                android:id="@+id/cb_i_agree"
+                style="@style/margin_fit_R_L"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:onClick="checkIAgree"
+                android:text="@string/i_agree_that_i_have_read_all_above_information_about_covid_19_vaccine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_vaccine_types_subtitle1_card3" />
+
+
+            <Button
+                android:id="@+id/btn_backward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="114dp"
+                android:layout_marginRight="114dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_btn"
+                android:fontFamily="@font/roboto_medium"
+                android:foregroundGravity="center_horizontal"
+                android:gravity="center"
+                android:onClick="finishActivity"
+                android:text="@string/backward"
+                android:textSize="20dp"
+                app:backgroundTint="@color/second_header"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_take_quiz"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_i_agree" />
+
+            <Button
+                android:id="@+id/btn_take_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_btn"
+                android:enabled="false"
+                android:fontFamily="@font/roboto_medium"
+                android:foregroundGravity="center_horizontal"
+                android:gravity="center"
+                android:onClick="takeQuiz"
+                android:text="@string/covid_19_quiz"
+                android:textSize="20dp"
+                app:backgroundTint="@color/second_header"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_backward"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_backward"
+                app:layout_constraintTop_toTopOf="@+id/btn_backward" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/second_header"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/nav_selector_item"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="auto"
+        app:menu="@menu/navigation_bar_items"
+        app:itemTextColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        />
+</RelativeLayout>

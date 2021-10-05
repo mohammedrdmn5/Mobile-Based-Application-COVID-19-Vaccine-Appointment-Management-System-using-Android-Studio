@@ -1,0 +1,225 @@
+<resources>
+    <string name="app_name">MyVaccine</string>
+    <string name="covid_19">COVID-19 </string>
+    <string name="confirmed_cases">Confirmed cases</string>
+    <string name="Active_cases">Active cases</string>
+    <string name="recovered_cases">Recovered cases</string>
+    <string name="death_cases">Death cases</string>
+    <string name="people">People</string>
+    <string name="s_confirmed_cases_num">716847</string>
+    <string name="s_recovered_cases_num">650964</string>
+    <string name="s_Active_cases_num">61812</string>
+    <string name="s_death_cases_num">4721</string>
+    <string name="tv_vaccination_progress">Vaccination Progress</string>
+    <string name="about_covid_19">About Coronavirus</string>
+    <string name="about_covid_19_header_info">
+        <b>What is Coronavirus (COVID-19)\?</b>
+         </string>
+    <string name="about_covid_19_info">
+        Coronavirus (COVID-19) is a new strain of coronavirus which may cause illness in animals or humans.
+        In humans, several coronaviruses are known to cause respiratory infections ranging from the common
+        cold to more severe diseases. First identified in a cluster with pneumonia symptoms in Wuhan city, Hubei province of China.
+    </string>
+    <string name="about_covid_19_symptoms">
+        <b>What are the symptoms of COVID-19\?</b>
+         </string>
+    <string name="about_covid_19_symptoms_common">
+        The most common symptoms of COVID-19 are:
+    </string>
+    <string name="about_covid_19_Spread">
+    <b> How does COVID-19 spread?</b>
+   </string>
+
+    <string name="about_covid_19_Spreading">
+  Coronavirus strains are spread from person to person through contaminated droplets
+       from a person who is sick with the illness (through coughing or sneezing) or contaminated hands.
+   </string>
+    <string name="about_covid_19_Spreading2">
+  The virus can spread through touching an infected surface.
+   </string>
+    <string name="about_covid_19_Spreading3">
+    People can also catch COVID-19 if they breathe in droplets from a person with COVID-19
+    who coughs out or exhales droplets. This is why it is important to stay more than 1 meter
+    (3 feet) away from a person who is sick.
+   </string>
+    <string name="treatment_for_covid_19"><b>Is there any treatment for COVID-19\?</b></string>
+    <string name="about_covid_19_treatment">The treatment of COVID-19 depends on enhancing the level of patients, treating
+    the symptoms and easing complications, immunity as there is no specific treatment
+    for the virus to date.  <a href="https://bit.ly/3qBSRYQ">Read more 🌐</a></string>
+
+    <string name="prevent_for_covid_19"><b> What are the ways to prevent the disease\?</b></string>
+    <string name="vaccination_centre"><b>Vaccination Centres and Hospitals</b></string>
+    <string name="covid_19_vaccination">COVID-19 Vaccination</string>
+    <string name="People_fully_vaccinated">2,214,001/32,558,838</string>
+    <string-array name="prevent_list">
+        <item>Washing hands with soap and water.</item>
+        <item>Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.</item>
+        <item>Covering mouth and nose with your bent elbow or tissue when you cough or sneeze.</item>
+        <item>Avoid touching your eyes, nose or mouth without washing your hands.</item>
+        <item>Avoid shaking hands and just wave.</item>
+        <item>Avoid contact with animals (live or dead).</item>
+        <item>Take enough rest and take a large amount of fluids.</item>
+    </string-array>
+    <string name="about_covid_19_vaccination"><b>COVID-19 Vaccine</b></string>
+    <string name="about_covid_19_vaccination_what"><b>The Immune System: the Body\’s Defense Against Infection</b></string>
+    <string name="about_covid_19_vaccination_what_subs">To understand how COVID-19 vaccinations act, it is necessary to first understand how our bodies handle illness. When germs enter our bodies, such as the virus that causes COVID-19,
+        they fight and multiply. This invasion, known as an infection, is what causes sickness. To combat infection, our immune system employs a number of strategies.
+        Blood comprises both red cells, which transport oxygen to tissues and organs, and white or immunological cells, which fight illness. Different types of white blood cells fight illness in different ways:
+
+   \n\n\u2022 <b>Macrophages </b>are white blood cells that eat and digest germs as well as dead or dying cells. The macrophages leave behind pieces of the invading germs known as "antigens."
+        Antigens are recognised as harmful by the body, prompting antibodies to destroy them.
+   \n\n\u2022  <b>B-lymphocytes </b>are white blood cells that serve as a defence. They produce antibody the virus pieces left behind by the macrophages.
+   \n\n\u2022  <b>T-lymphocytes </b>are a different type of defensive white blood cell. They infect previously affected cells in the body.
+
+\n\nThe When a person is first infected with the virus that causes COVID-19, it might take many days or weeks for their body to produce and use all of the germ-fighting tools required to overcome the infection.
+        After the infection, the person\'s immune system recalls what it learnt about how to protect the body against such a disease.
+
+\n\nTThe body stores a few T-lymphocytes known as "memory cells," which activate quickly if the body experiences the same virus again. When B-lymphocytes identify familiar antigens, they create antibodies to destroy them. Experts are still trying to figure out how long these memory cells can protect a person against the virus that causes COVID-19.
+
+    </string>
+    <string name="about_covid_19_vaccination_how"><b>How COVID-19 Vaccines Work</b></string>
+    <string name="about_covid_19_vaccination_how_subs">Vaccines perform in a variety of ways to provide protection. However, with all vaccines, the body is left with a supply of “memory” T- and B-lymphocytes that will recall how to fight that virus in the future.
+       \n\nT-lymphocytes and B-lymphocytes are normally produced a few weeks after vaccination.\nAs a result, it is possible that a person\ncould become infected with the virus\nthat causes COVID-19 just before or\njust after vaccination and then become ill as a result of the vaccine failing to give adequate protection.
+        \n\nSymptoms such as fever can occur after vaccination due to the process of generating immunity. These symptoms are natural and indicate that the body is generating immunity.
+    </string>
+    <string name="about_covid_19_vaccination_types"><b>What are the types of vaccines?</b></string>
+
+    <string name="about_covid_19_vaccination_types_subs1">
+       <b>💉 mRNA</b>
+    </string>
+    <string name="about_covid_19_vaccination_types_subs1_sub1">
+        \u2022Primary content and how it reacts:
+        \nmRNA sequence that enters each cell and produces the particular virus protein
+        \n\n\u2022Function:
+        \nThe mRNA molecule is used to stimulate immunity in order for the targeted virus protein to be detected.
+        \n\n\u2022Advantages:
+          \nDoes not require any live components and is synthetically created.
+          \nTriggers an adaptive immune response.
+          \nSimple, easy and quick to produce.
+        \n\n\u2022Challenges:
+          \nIts use as a vaccine during the first time in medical history.
+          \nSome mRNA vaccines must be stored in extremely cold temperatures.
+        \n\n\u2022Vaccine candidate:
+           \nModerna
+           \nPfizer/BioNTech
+    </string>
+
+    <string name="about_covid_19_vaccination_types_subs2">
+         <b>💉 Viral vector</b>
+    </string>
+    <string name="about_covid_19_vaccination_types_subs2_sub2">
+       \u2022Primary content and how it reacts:
+        \nA modified (vector) virus is used to carry the antigen genetic code. The targeted protein will be produced by the human cell.
+        \n\n\u2022Function:
+        \nA safe viral vector is designed to transfer the targeted virus\'s genetic material while also activating the human immune response.
+        \n\n\u2022Advantages:
+          \nProven technology
+          \nActivates an adaptive response for a more efficient immune response
+        \n\n\u2022Challenges:
+          \nComplex producing process
+          \nIt is critical to ensure that the virus vector can be used safely.
+        \n\n\u2022Vaccine candidate:
+           \nAstraZeneca
+           \nCanSino Biologics
+           \nJohnson &amp; Johnson
+           \nSputnik V
+
+    </string>
+    <string name="about_covid_19_vaccination_types_subs3">
+        <b>💉 Inactivated virus</b>
+    </string>
+    <string name="about_covid_19_vaccination_types_subs3_sub3">
+         \u2022Primary content and how it reacts:
+        \nViruses that have been killed by extreme heat, chemicals, or radiation
+        \n\n\u2022Function:
+        \nA virus that has been killed and is being used to boost the human immune system.
+        \n\n\u2022Advantages:
+          \nProven technolog
+          \nEasy to produce
+          \nAppropriate for those who have a weak immune system
+        \n\n\u2022Challenges:
+          \nHigh producing cost
+        \n\n\u2022Vaccine candidate:
+           \nSinovac
+    </string>
+    <string name="covid_19_quiz">Take Quiz</string>
+    <string name="backward">Go back</string>
+    <string name="i_agree_that_i_have_read_all_above_information_about_covid_19_vaccine">I Agree that I have read all above information about COVID-19 vaccine</string>
+    <string name="questionsNo">Questions: 1/n</string>
+    <string name="option_3">Option 3</string>
+    <string name="state">State:</string>
+    <string name="i_understand">I Understand all risks and side effects of the vaccination</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="enter_your_passport">Enter your passport/IC No</string>
+    <string name="full_name">Full Name:</string>
+    <string name="passport_no_ic">Passport/IC No:</string>
+    <string name="phone_num">Phone number:</string>
+    <string name="confirm_phone_num">Confirm phone number:</string>
+    <string name="enter_your_phone">Enter your phone number</string>
+    <string name="submit">Submit</string>
+    <string name="age">Age:</string>
+    <string name="enter_your_age">"Enter your age</string>
+    <string name="_1_are_you_interested_to_take_the_covid_19_vaccine">1.Are you interested to take the COVID-19 vaccine?</string>
+    <string name="_2_do_you_have_any_comorbidities">2.Do you have any comorbidities?</string>
+    <string name="i_declare_that_all">I declare that all the details mentioned provided is true correct and correct</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="email_optional">Email (Optional):</string>
+    <string name="_2_1_please_select_your">2.1 Please select your present comorbidities (You can choose more than 1)</string>
+    <string name="_2_1_please_selected">2.1 Selected present comorbidities</string>
+    <string name="diabetes_mellitus">Diabetes Mellitus</string>
+    <string name="hypertension">Hypertension</string>
+    <string name="heart_disease">Heart Disease</string>
+    <string name="asthma">Asthma</string>
+    <string name="cancer">Cancer</string>
+    <string name="chronic_lung_disease">Chronic Lung Disease</string>
+    <string name="kidney_disease">Kidney Disease</string>
+    <string name="liver_disease">Liver Disease</string>
+    <string name="stroke">Stroke</string>
+    <string name="address">Address:</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="postcode">Postcode:</string>
+    <string name="update">update</string>
+    <string name="confirm">Confirm</string>
+    <string name="vaccine">Vaccine</string>
+    <string name="profile">Profile</string>
+    <string name="username">Username:</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="password">Password:</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_conf_password">Enter your confirm password</string>
+    <string name="login">Login</string>
+    <string name="register_new_account"><u>Register new account </u></string>
+    <string name="already_have_account"><b>Already have account:</b> <u>Back to login</u> </string>
+    <string name="first_name">First name:</string>
+    <string name="enter_your_Fname">Enter your first name</string>
+    <string name="enter_your_Lname">Enter your last name</string>
+    <string name="last_name">Last name:</string>
+    <string name="dateofbirth">Date of birth:</string>
+    <string name="select_your_DOB">Select your date of birth</string>
+    <string-array name="personal_title">
+        <item>Mr</item>
+        <item>Ms</item>
+        <item>Mrs</item>
+        <item>Miss</item>
+    </string-array>
+    <string name="datepicker">datePicker</string>
+    <string-array name="filter">
+        <item>All</item>
+        <item>Registered</item>
+        <item>Done quiz</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Vaccinated</item>
+        <item>ByAdmin</item>
+    </string-array>
+    <string name="email_address">Email address:</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="enter_your_address">Enter your address</string>
+    <string name="enter_your_postcode">Enter your postcode</string>
+    <string name="register">Register</string>
+    <string name="passport">Passport:</string>
+    <string name="quiz">Quiz</string>
+    <string name="youtube_video"><b>Youtube video:</b></string>
+
+
+</resources>

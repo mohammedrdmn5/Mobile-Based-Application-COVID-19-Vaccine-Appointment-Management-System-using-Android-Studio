@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+<!--   tools:context=".edit_user_managment"-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Edit User"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_edit_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/username"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/ic_user"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_your_username"
+                android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/tv_edit_Fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/first_name"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_edit_Fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/ic_user"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_your_Fname"
+                android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/tv_edit_Lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/last_name"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_edit_Lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/ic_user"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_your_username"
+                android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/tv_edit_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/ic_unlock"
+                android:drawableLeft="@drawable/ic_unlock"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_your_password"
+                android:inputType="textPersonName|textPassword" />
+            <TextView
+                android:id="@+id/tv_edit_conf_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/confirm_password"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_edit_conf_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:visibility="gone"
+                android:drawableStart="@drawable/ic_unlock"
+                android:drawableLeft="@drawable/ic_unlock"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_your_conf_password"
+                android:inputType="textPersonName|textPassword" />
+
+            <TextView
+                android:id="@+id/tv_edit_email_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/email_address"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_edit_email_addresss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/ic_email"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_your_email_address"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/tv_edit_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_edit_addresss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/_72_pin"
+                android:drawableLeft="@drawable/_72_pin"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_your_address"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/tv_edit_postcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/postcode"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_edit_postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/_72_pin"
+                android:drawableLeft="@drawable/_72_pin"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_your_postcode"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/tv_edit_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/phone_num"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/ic_telephone"
+                android:drawableLeft="@drawable/ic_telephone"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_your_phone"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/tv_edit_passport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/passport"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_edit_passport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/passport"
+                android:drawableLeft="@drawable/passport"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_your_passport"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/tv_edit_DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/dateofbirth"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/et_edit_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:visibility="gone"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:hint="@string/select_your_DOB"
+                android:onClick="showDatePicker" />
+
+            <TextView
+                android:id="@+id/tv_edit_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Gender:"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/boy"
+                    android:text="Male"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/girl"
+                    android:text="Female"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_registration_qustion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg16"
+
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/_1_are_you_interested_to_take_the_covid_19_vaccine"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_postcode" />
+
+            <RadioGroup
+                android:id="@+id/rg_qution1_Options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_qution1_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Yes"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_qution1_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="NO"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_registration_qustion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg16"
+                android:visibility="gone"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/_2_do_you_have_any_comorbidities"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/rg_qution2_Options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_qution2_edit_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="edot_radio"
+                    android:text="Yes"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_qution2_edit_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="edot_radio"
+                    android:text="NO"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/edit_expandableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg16"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_registration_sub_qustion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/_2_1_please_select_your"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/diabetes_mellitus" />
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/hypertension"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cb1" />
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/heart_disease" />
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/asthma" />
+
+                <CheckBox
+                    android:id="@+id/cb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/cancer" />
+
+                <CheckBox
+                    android:id="@+id/cb6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/chronic_lung_disease" />
+
+                <CheckBox
+                    android:id="@+id/cb7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/kidney_disease" />
+
+                <CheckBox
+                    android:id="@+id/cb8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/liver_disease" />
+
+                <CheckBox
+                    android:id="@+id/cb9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/stroke" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_edit_qustion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg16"
+                android:fontFamily="@font/roboto_medium"
+                android:text="3. Has COVID-19?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mang_expandableLayout" />
+
+            <RadioGroup
+                android:id="@+id/rg_qution3_Options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_edit_qustion3">
+
+                <RadioButton
+                    android:id="@+id/rb_qution3_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked3"
+                    android:text="Yes"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_qution3_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked3"
+                    android:text="NO"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_edit_qustion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg16"
+                android:fontFamily="@font/roboto_medium"
+                android:text="4. Has been registered for vaccine?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_qution4_Options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <RadioButton
+                    android:id="@+id/rb_qution4_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked4"
+                    android:text="Yes"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_qution4_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked4"
+                    android:text="NO"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_edit_qustion5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg16"
+                android:fontFamily="@font/roboto_medium"
+                android:text="5. Has been taken vaccine?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_qution5_Options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <RadioButton
+                    android:id="@+id/rb_qution5_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked5"
+                    android:text="Yes"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_qution5_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked5"
+                    android:text="NO"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_edit_qustion6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg16"
+                android:fontFamily="@font/roboto_medium"
+                android:text="6. Has been done quiz?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_qution6_Options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <RadioButton
+                    android:id="@+id/rb_qution6_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked6"
+                    android:text="Yes"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_qution6_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked6"
+                    android:text="NO"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_cancel_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_btn"
+                android:fontFamily="@font/roboto_medium"
+                android:foregroundGravity="center_horizontal"
+                android:text="Cancel"
+                android:textSize="20dp"
+                app:backgroundTint="#DF5C33" />
+
+            <Button
+                android:id="@+id/btn_edit_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_btn"
+                android:fontFamily="@font/roboto_medium"
+                android:foregroundGravity="center_horizontal"
+                android:text="Edit user"
+                android:textSize="20dp"
+                app:backgroundTint="@color/second_header" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
